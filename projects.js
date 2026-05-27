@@ -6,14 +6,18 @@ window.projectsData = [
     "name": "Tablero de Comando (Dashboard)",
     "category": "Management",
     "description": "Aplicación web estática y dinámica para organizar, filtrar y seguir en tiempo real todos los proyectos de desarrollo y gestión administrativa.",
-    "status": "active",
-    "progress": 60,
+    "status": "completed",
+    "progress": 100,
     "nextStep": {
-      "action": "Desarrollar un script que actualice projects.js leyendo de forma automática las novedades desde los archivos .md.",
-      "responsible": "Diego R.",
-      "deadline": "2026-05-31"
+      "action": "Sin pendientes inmediatos.",
+      "responsible": "N/A",
+      "deadline": "N/A"
     },
     "history": [
+      {
+        "date": "2026-05-27",
+        "note": "Desarrollado el script de sincronización local (sync_projects.py) y la automatización del push diario a GitHub (push_changes.ps1/schedule_task.ps1)."
+      },
       {
         "date": "2026-05-27",
         "note": "Se crea el archivo maestro del Dashboard (proyecto-Dashboard.md) y se agrega como proyecto en el tablero."

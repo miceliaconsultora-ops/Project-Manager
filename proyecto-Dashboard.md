@@ -2,12 +2,12 @@
 id: dashboard
 name: Tablero de Comando (Dashboard)
 category: Management
-status: active
-progress: 60
+status: completed
+progress: 100
 description: Aplicación web estática y dinámica para organizar, filtrar y seguir en tiempo real todos los proyectos de desarrollo y gestión administrativa.
-next_step_action: Desarrollar un script que actualice projects.js leyendo de forma automática las novedades desde los archivos .md.
-next_step_responsible: Diego R.
-next_step_deadline: 2026-05-31
+next_step_action: Sin pendientes inmediatos.
+next_step_responsible: N/A
+next_step_deadline: N/A
 ---
 
 # Proyecto Maestro - Tablero de Comando (Dashboard)
@@ -66,5 +66,7 @@ Esto se puede ejecutar mediante:
 ---
 
 ## Registro de Avance
+- 2026-05-27: Desarrollado el script de sincronización local (sync_projects.py) y la automatización del push diario a GitHub (push_changes.ps1/schedule_task.ps1).
 - 2026-05-27: Se crea el archivo maestro del Dashboard (proyecto-Dashboard.md) y se agrega como proyecto en el tablero.
+
 
