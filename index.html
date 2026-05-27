@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablero de Comando — Proyectos en Curso</title>
+  <meta name="description" content="Dashboard dinámico para el seguimiento, control y asignación de próximos pasos de los proyectos de desarrollo y gestión administrativa.">
+  
+  <!-- Estilos del Dashboard -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Cabecera de la Aplicación -->
+    <header id="main-header">
+      <div class="brand">
+        <h1>Tablero de Comando</h1>
+        <p>Seguimiento de proyectos y asignación de próximos pasos</p>
+      </div>
+      <div class="current-date" id="current-date-display">
+        <!-- Rellenado dinámicamente o estático -->
+        <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">
+          Última actualización: 26 de Mayo, 2026
+        </span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Resumen General / Estadísticas -->
+      <section id="stats-bar" class="stats-bar" aria-label="Estadísticas de proyectos">
+        <!-- Rellenado por app.js -->
+      </section>
+
+      <!-- Panel de Filtros -->
+      <section id="filter-panel" class="filter-section" aria-label="Controles de filtro">
+        <!-- Filtro por Responsable -->
+        <div class="filter-group" id="group-filter-owner">
+          <span class="filter-label">Responsable del Próximo Paso:</span>
+          <div class="filter-options" role="group" aria-label="Filtros por responsable">
+            <button class="btn-filter active" id="btn-filter-owner-all" data-filter-owner="all">Todos</button>
+            <button class="btn-filter" id="btn-filter-owner-dr" data-filter-owner="Diego R.">Diego R.</button>
+            <button class="btn-filter" id="btn-filter-owner-dv" data-filter-owner="Diego VB6">Diego VB6</button>
+            <button class="btn-filter" id="btn-filter-owner-atika" data-filter-owner="Atika">Atika</button>
+          </div>
+        </div>
+
+        <!-- Filtro por Estado -->
+        <div class="filter-group" id="group-filter-status">
+          <span class="filter-label">Estado:</span>
+          <div class="filter-options" role="group" aria-label="Filtros por estado del proyecto">
+            <button class="btn-filter active" id="btn-filter-status-all" data-filter-status="all">Todos</button>
+            <button class="btn-filter" id="btn-filter-status-active" data-filter-status="active">En Curso</button>
+            <button class="btn-filter" id="btn-filter-status-completed" data-filter-status="completed">Sin Pendientes</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Grilla de Tarjetas de Proyectos -->
+      <section class="projects-grid" id="projects-grid" aria-label="Lista de proyectos">
+        <!-- Rellenado dinámicamente por app.js -->
+      </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer style="margin-top: 5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; color: var(--text-muted); font-size: 0.8rem;">
+      <p>Tablero Dinámico de Proyectos. Modificable y escalable en tiempo real.</p>
+    </footer>
+  </div>
+
+  <!-- Carga de Scripts -->
+  <script src="projects.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
