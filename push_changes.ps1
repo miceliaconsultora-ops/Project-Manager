@@ -43,8 +43,19 @@ try {
     git commit -m $commitMsg
 
     Write-Host "Subiendo a GitHub (git push origin main)..." -ForegroundColor Yellow
-    # Redirigir stdout y stderr para ver el output de git push en logs
-    git push origin main 2>&1 | Write-Host
+    
+    # Git escribe mensajes de progreso a stderr. Desactivamos temporalmente Action=Stop.
+    $oldErrorAction = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    
+    git push origin main
+    $gitExitCode = $LASTEXITCODE
+    
+    $ErrorActionPreference = $oldErrorAction
+    
+    if ($gitExitCode -ne 0) {
+        throw "git push falló con código de salida $gitExitCode"
+    }
 
     Write-Host "==============================================" -ForegroundColor Green
     Write-Host "Proceso completado exitosamente." -ForegroundColor Green
