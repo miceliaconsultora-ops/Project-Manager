@@ -7,7 +7,7 @@ Set-Location $ScriptDir
 
 Write-Host "==============================================" -ForegroundColor Cyan
 Write-Host "Iniciando proceso de sincronización..." -ForegroundColor Cyan
-Write-Host "Fecha: (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" -ForegroundColor Cyan
+Write-Host "Fecha: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" -ForegroundColor Cyan
 Write-Host "Directorio: $ScriptDir" -ForegroundColor Cyan
 Write-Host "==============================================" -ForegroundColor Cyan
 

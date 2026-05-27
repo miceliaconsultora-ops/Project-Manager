@@ -15,12 +15,8 @@ window.projectsData = [
     },
     "history": [
       {
-        "date": "2026-05-27",
-        "note": "Desarrollado el script de sincronización local (sync_projects.py) y la automatización del push diario a GitHub (push_changes.ps1/schedule_task.ps1)."
-      },
-      {
-        "date": "2026-05-27",
-        "note": "Se crea el archivo maestro del Dashboard (proyecto-Dashboard.md) y se agrega como proyecto en el tablero."
+        "date": "N/A",
+        "note": "Sin novedades registradas en el archivo markdown."
       }
     ]
   },

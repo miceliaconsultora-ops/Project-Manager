@@ -38,30 +38,69 @@ El equipo y la división de tareas dentro de los proyectos se definen de la sigu
 
 ## Proyectos en el Tablero
 
-El tablero de comando actualmente da seguimiento a los siguientes desarrollos, cada uno documentado en su respectivo archivo maestro:
+El tablero de comando da seguimiento a los siguientes desarrollos, cada uno documentado en su respectivo archivo maestro:
 
 1.  **[Control Stock V2](file:///c:/Antigravity/Project%20Manager/Control%20Stock/proyecto-ControlStock.md)** (Mobile / React Native / SQLite / Google Apps Script)
 2.  **[Maestro de Productos Grunbau](file:///c:/Antigravity/Project%20Manager/Grunbau/proyecto-maestro-Grunbau.md)** (Data / Python / OCR)
 3.  **[Proyecto Lampe - Bot WhatsApp](file:///c:/Antigravity/Project%20Manager/Lampe/proyecto-lampe.md)** (IA & Bot / Runamatic)
 4.  **[NL2Query - VB6 a SQL](file:///c:/Antigravity/Project%20Manager/NL2Query/proyecto-NL2Query.md)** (IA & Python / FastAPI / Claude API / VB6)
+5.  **[Tablero de Comando (Dashboard)](file:///c:/Antigravity/Project%20Manager/proyecto-Dashboard.md)** (Management / HTML / CSS / JS / Python)
 
 ---
 
-## Arquitectura y Mecanismo de Actualización del Dashboard
+## Arquitectura y Mecanismo de Sincronización del Dashboard
 
-El Dashboard está construido como una aplicación web estática pero dinámica en el cliente, ubicada en la raíz del proyecto:
+El Dashboard está construido como una aplicación web estática ubicada en la raíz del proyecto. Los componentes visuales se actualizan dinámicamente en el cliente al recargar la página:
 *   [index.html](file:///c:/Antigravity/Project%20Manager/index.html) - Estructura y maquetación principal.
 *   [styles.css](file:///c:/Antigravity/Project%20Manager/styles.css) - Estilos modernos y responsivos.
 *   [app.js](file:///c:/Antigravity/Project%20Manager/app.js) - Lógica de renderizado de tarjetas, cálculo de estadísticas y filtros.
 *   [projects.js](file:///c:/Antigravity/Project%20Manager/projects.js) - Base de datos en memoria (Array JS) con los datos del tablero.
 
-### Idea de Actualización Automática a Demanda
+### Funcionamiento de la Automatización
 
-La actualización del archivo [projects.js](file:///c:/Antigravity/Project%20Manager/projects.js) se realiza de forma que lea las últimas novedades de cada proyecto directamente desde su archivo `.md` particular. 
+El sistema automatizado de sincronización se compone de tres piezas clave:
 
-Esto se puede ejecutar mediante:
-1.  **Llamada a un script local (Python/Node):** Un script que parsee cada `.md` del proyecto, extraiga el "Estado actual", "Registro de avance" / "Historial", "Progreso" y "Próximos pasos", y reescriba [projects.js](file:///c:/Antigravity/Project%20Manager/projects.js).
-2.  **Actualización guiada por Agente de IA:** El agente lee los archivos `.md` de los proyectos modificados y edita [projects.js](file:///c:/Antigravity/Project%20Manager/projects.js) sincronizando el progreso, fechas límites (`deadline`), responsables e historial de avances de cada tarjeta del tablero de comando.
+1.  **Script de Sincronización Local ([sync_projects.py](file:///c:/Antigravity/Project%20Manager/sync_projects.py)):**
+    Es un script en Python que escanea recursivamente el directorio del workspace en busca de archivos `.md`. Para cada archivo detectado, extrae los datos estructurados y reescribe [projects.js](file:///c:/Antigravity/Project%20Manager/projects.js).
+
+2.  **Script de Integración y Push ([push_changes.ps1](file:///c:/Antigravity/Project%20Manager/push_changes.ps1)):**
+    Es un script en PowerShell que:
+    *   Ejecuta `sync_projects.py` para regenerar la base de datos del dashboard.
+    *   Realiza las operaciones de control de versiones: agrega los archivos modificados (`git add .`), realiza un commit con fecha y hora actual, y sube los cambios al repositorio en GitHub (`git push origin main`).
+    *   Controla el flujo de excepciones para evitar que PowerShell aborte la ejecución con las salidas de progreso habituales de Git en stderr.
+
+3.  **Tarea Programada en Windows (`ProjectManager-DailySync`):**
+    Mediante el script [schedule_task.ps1](file:///c:/Antigravity/Project%20Manager/schedule_task.ps1) se registra una tarea programada diaria a nivel de usuario en Windows que corre a las **19:00**. Esta tarea arranca `push_changes.ps1` en segundo plano (modo oculto).
+
+---
+
+## Reglas de Formato para Archivos de Proyecto (`.md`)
+
+Para que un proyecto sea detectado e incorporado correctamente al Dashboard por el script de sincronización, debe cumplir con las siguientes reglas:
+
+1.  **Cabecera de Metadatos (YAML Frontmatter):**
+    Debe ubicarse al inicio exacto del archivo, delimitado por `---`, e incluir la siguiente estructura obligatoria:
+    ```yaml
+    ---
+    id: identificador-unico-del-proyecto
+    name: Nombre Visible del Proyecto
+    category: Categoría (p. ej. Mobile, Data, IA & Bot, Management)
+    status: active | completed | pending-review
+    progress: 80 # Entero de 0 a 100
+    description: Descripción corta y concisa del proyecto.
+    next_step_action: Próximo paso inmediato a ejecutar.
+    next_step_responsible: Nombre del responsable (p. ej. Diego R., Atika, Diego B.)
+    next_step_deadline: AAAA-MM-DD
+    ---
+    ```
+
+2.  **Sección de Historial (Registro de Avance):**
+    El script buscará una sección con el encabezado de segundo nivel `## Registro de Avance` (o también `## Historial` o `## Bitácora`). Cada hito del historial debe declararse en una lista de viñetas con el formato de fecha exacto `AAAA-MM-DD`:
+    ```markdown
+    ## Registro de Avance
+    - 2026-05-27: Hito o avance detallado aquí.
+    - 2026-05-26: Otro avance anterior.
+    ```
 
 ---
 
