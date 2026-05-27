@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Contar pendientes por responsable
     const byAtika = projects.filter(p => p.status === "active" && p.nextStep.responsible === "Atika").length;
     const byDiegoR = projects.filter(p => p.status === "active" && p.nextStep.responsible === "Diego R.").length;
-    const byDiegoVb6 = projects.filter(p => p.status === "active" && p.nextStep.responsible === "Diego VB6").length;
+    const byDiegoB = projects.filter(p => p.status === "active" && p.nextStep.responsible === "Diego B.").length;
     
     statsContainer.innerHTML = `
       <div class="stat-card">
@@ -66,8 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (name.includes("Diego R")) {
       return { letter: "DR", color: "var(--owner-dr)" };
     }
-    if (name.includes("Diego VB6")) {
-      return { letter: "DV", color: "var(--owner-dv)" };
+    if (name.includes("Diego B.")) {
+      return { letter: "DB", color: "var(--owner-db)" };
     }
     if (name.includes("Atika")) {
       return { letter: "A", color: "var(--owner-atika)" };

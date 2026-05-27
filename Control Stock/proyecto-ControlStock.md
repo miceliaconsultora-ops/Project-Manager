@@ -1,3 +1,15 @@
+---
+id: control-stock
+name: Control Stock V2
+category: Mobile
+status: active
+progress: 75
+description: Aplicación móvil para la preparación de entregas contra stock y control de despacho por cliente, integrada con Google Drive y Apps Script.
+next_step_action: Probar en celular con Expo Go (cámara, SQLite, sincronización) y compilar APK para preview.
+next_step_responsible: Diego R.
+next_step_deadline: 2026-05-29
+---
+
 # Proyecto - Control Stock V2
 
 ## Estado actual
@@ -206,4 +218,11 @@ npx eas build --platform android --profile preview
 ```
 
 Esto genera un APK instalable para prueba mas cercana al uso real.
+
+---
+
+## Registro de Avance
+- 2026-05-26: Flujo completo de entrega probado con Google Drive y Apps Script en entorno de preview web.
+- 2026-05-26: Estructuración de base de datos local SQLite y reglas anti-reutilización verificadas con manifest_version.
+
 

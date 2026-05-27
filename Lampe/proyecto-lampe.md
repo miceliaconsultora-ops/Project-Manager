@@ -1,3 +1,15 @@
+---
+id: lampe
+name: Proyecto Lampe (Bot WhatsApp)
+category: IA & Bot
+status: active
+progress: 20
+description: Sistema de atención y prefiltrado administrativo/triage por WhatsApp para clínica de fisioterapia utilizando la plataforma Runamatic.
+next_step_action: Reunión con el cliente para definir reglas de triage y alcance del MVP.
+next_step_responsible: Diego R.
+next_step_deadline: 2026-05-27
+---
+
 # Proyecto Lampe
 
 Fecha de corte: 2026-05-26
@@ -103,4 +115,12 @@ Despues de eso, el trabajo central sera reconstruir los flujos de recepcion y tu
 | 8 | Conectar WhatsApp oficial y probar con recepcion en entorno controlado. |
 | 9 | Medir conversaciones, derivaciones, errores y casos sin resolver. |
 | 10 | Decidir si se queda en Runamatic o si se empieza una capa propia encima. |
+
+---
+
+## Registro de Avance
+- 2026-05-26: Reunión con el cliente programada para el 27/05 para definir alcance del MVP.
+- 2026-05-26: Investigación de API y backup local concluida. Se determinó que los flujos visuales deberán reconstruirse manualmente.
+- 2026-05-26: Se definió priorizar Runamatic sobre desarrollo propio para acelerar el MVP y validar con clínica real.
+
 

@@ -1,3 +1,15 @@
+---
+id: grunbau
+name: Maestro de Productos Grunbau
+category: Data
+status: active
+progress: 80
+description: Pipeline de extracción de ítems de facturas de compra (digitales y escaneadas vía OCR Tesseract) para construir un maestro unificado de productos con precios de referencia.
+next_step_action: Definir los criterios y rango de fechas para la extracción de recepciones a partir de facturas de compra.
+next_step_responsible: Atika
+next_step_deadline: 2026-05-30
+---
+
 # Proyecto Maestro de Productos Grunbau
 *Registro de avance — última actualización: 26 mayo 2026*
 
@@ -114,6 +126,22 @@ Segunda tanda de facturas: 81 PDFs escaneados (imágenes), sin texto extraíble 
 
 ## Pendientes / próximos pasos
 
-- Incorporar facturas de proveedores sin cobertura aún (CENTRO HIDRÁULICO, entre otros)
-- Definir frecuencia de actualización del maestro (¿mensual?)
-- Evaluar automatización del pipeline OCR para nuevas tandas de facturas escaneadas
+27/05/2026
+
+- CREAR "RECEPCIONES" A PARTIR DE LAS FACTURAS:
+  - DECISIONES A TOMAR: 
+  - DESDE CUANDO SE VAN A TOMAR LAS FACTURAS
+  - DEFINIR EL PIPLINE DE EXTRACCIÓN Y CREACIÓN DE RECEPCIONES
+
+- RESPONSABLE:
+  - ATIKA: DEFINIR LOS CRITERIOS PARA LA EXTRACCIÓN
+
+- DEFINIDOS LOS CRITERIOS. 
+  - DIEGO R. SE ENCARGARÁ DEL DESARROLLO. 
+
+---
+
+## Registro de Avance
+- 2026-05-27: Inicio de fase de Recepciones: Atika debe definir criterios para la extracción y Diego R. desarrollará el pipeline.
+- 2026-05-05: Fase 2 de OCR concluida con 720 productos unificados y 21 proveedores activos en Maestro_Productos_Grunbau.xlsx.
+- 2026-04-08: Fase 1 concluida con extracción digital de 17 listas de precios individuales por proveedor.

@@ -1,3 +1,15 @@
+---
+id: nl2query
+name: NL2Query (VB6 a SQL)
+category: IA & Python
+status: active
+progress: 50
+description: Traductor de lenguaje natural a sentencias SQL sobre vistas del ERP, integrado como sidecar HTTP local para la aplicación legacy en Visual Basic 6.
+next_step_action: Gestión de suscripción para habilitar la API real de Anthropic (Claude) en el sidecar local.
+next_step_responsible: Atika
+next_step_deadline: 2026-05-28
+---
+
 # NL2Query — Estado consolidado del proyecto
 
 **Cliente interno:** ATIKA
@@ -485,3 +497,9 @@ Decisiones a confirmar antes de arrancar:
 - Default = Claude Sonnet 4.6 (recomendado).
 - Prompt caching activo desde día 1 (recomendado).
 - Logging estructurado JSONL desde día 1 (recomendado, alimenta etapa 2).
+
+---
+
+## Registro de Avance
+- 2026-05-26: Stress test finalizado con éxito: 48/48 consultas SQL ejecutadas de forma correcta contra GRUNBAU_PROD y BERTOOLS_PROD.
+- 2026-05-26: Estructuración de prompts semánticos por vista y base_rules consolidada para compatibilidad con SQL Server 2008 (compat-100).
