@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // Selectores DOM
   const projectsGrid = document.getElementById("projects-grid");
+  const miceliaProjectsGrid = document.getElementById("micelia-projects-grid");
+  const generalProjectsSection = document.getElementById("general-projects-section");
+  const miceliaProjectsSection = document.getElementById("micelia-projects-section");
   const statsContainer = document.getElementById("stats-bar");
   const filterButtonsOwner = document.querySelectorAll("[data-filter-owner]");
   const filterButtonsStatus = document.querySelectorAll("[data-filter-status]");
@@ -86,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Renderizar Grilla de Proyectos
   function renderProjects() {
     projectsGrid.innerHTML = "";
+    miceliaProjectsGrid.innerHTML = "";
     
     // Filtrar proyectos
     const filteredProjects = projects.filter(project => {
@@ -118,7 +122,13 @@ document.addEventListener("DOMContentLoaded", () => {
       return 0;
     });
     
+    // Separar en Generales y MicelIA
+    const generalProjects = filteredProjects.filter(p => !p.isMicelia);
+    const miceliaProjects = filteredProjects.filter(p => p.isMicelia);
+    
     if (filteredProjects.length === 0) {
+      generalProjectsSection.style.display = "block";
+      miceliaProjectsSection.style.display = "block";
       projectsGrid.innerHTML = `
         <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 2rem; color: var(--text-muted);">
           <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">No se encontraron proyectos con los filtros seleccionados.</p>
@@ -128,9 +138,27 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
     
-    filteredProjects.forEach((project, idx) => {
+    // Ocultar o mostrar contenedores según cantidad de proyectos
+    if (generalProjects.length === 0) {
+      generalProjectsSection.style.display = "none";
+    } else {
+      generalProjectsSection.style.display = "block";
+      renderProjectList(generalProjects, projectsGrid);
+    }
+    
+    if (miceliaProjects.length === 0) {
+      miceliaProjectsSection.style.display = "none";
+    } else {
+      miceliaProjectsSection.style.display = "block";
+      renderProjectList(miceliaProjects, miceliaProjectsGrid);
+    }
+  }
+  
+  // Función auxiliar para renderizar una lista en una grilla específica
+  function renderProjectList(projectList, gridContainer) {
+    projectList.forEach((project, idx) => {
       const card = document.createElement("div");
-      card.className = "project-card";
+      card.className = `project-card ${project.isMicelia ? "micelia-card" : ""}`;
       card.style.animationDelay = `${idx * 0.08}s`;
       
       const avatarInfo = getOwnerAvatar(project.nextStep.responsible);
@@ -159,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
         historyItems = `<li class="history-item" style="color: var(--text-muted);">Sin novedades registradas.</li>`;
       }
       
-      // Verificar si la fecha de vencimiento es hoy o pasada (ejemplo básico)
+      // Verificar si la fecha de vencimiento es hoy o pasada
       let dateMetaClass = "meta-date";
       if (project.nextStep.deadline && project.nextStep.deadline !== "N/A") {
         const deadlineDate = new Date(project.nextStep.deadline);
@@ -218,7 +246,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       `;
       
-      projectsGrid.appendChild(card);
+      gridContainer.appendChild(card);
     });
   }
   

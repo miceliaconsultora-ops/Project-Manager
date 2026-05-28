@@ -39,6 +39,14 @@ def parse_markdown_project(file_path):
     except ValueError:
         progress = 0
 
+    is_micelia = any(p.lower() == "micelia" for p in file_path.parts)
+    responsible = metadata.get("next_step_responsible", "N/A")
+    if is_micelia:
+        is_valid_resp = (responsible == "Diego R." or 
+                         "cliente" in responsible.lower())
+        if not is_valid_resp:
+            print(f"  [ADVERTENCIA] Proyecto MicelIA '{metadata.get('name')}' tiene un responsable no permitido: '{responsible}'. Debe ser Diego R. o el Cliente.")
+
     # Construir objeto del proyecto
     project = {
         "id": metadata["id"],
@@ -47,9 +55,10 @@ def parse_markdown_project(file_path):
         "description": metadata.get("description", ""),
         "status": metadata["status"],
         "progress": progress,
+        "isMicelia": is_micelia,
         "nextStep": {
             "action": metadata.get("next_step_action", "N/A"),
-            "responsible": metadata.get("next_step_responsible", "N/A"),
+            "responsible": responsible,
             "deadline": metadata.get("next_step_deadline", "N/A")
         },
         "history": []

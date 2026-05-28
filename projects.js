@@ -8,6 +8,7 @@ window.projectsData = [
     "description": "Aplicación web estática y dinámica para organizar, filtrar y seguir en tiempo real todos los proyectos de desarrollo y gestión administrativa.",
     "status": "completed",
     "progress": 100,
+    "isMicelia": false,
     "nextStep": {
       "action": "Sin pendientes inmediatos.",
       "responsible": "N/A",
@@ -27,6 +28,7 @@ window.projectsData = [
     "description": "Aplicación móvil para la preparación de entregas contra stock y control de despacho por cliente, integrada con Google Drive y Apps Script.",
     "status": "active",
     "progress": 75,
+    "isMicelia": false,
     "nextStep": {
       "action": "Probar en celular con Expo Go (cámara, SQLite, sincronización) y compilar APK para preview.",
       "responsible": "Diego R.",
@@ -50,6 +52,7 @@ window.projectsData = [
     "description": "Pipeline de extracción de ítems de facturas de compra (digitales y escaneadas vía OCR Tesseract) para construir un maestro unificado de productos con precios de referencia.",
     "status": "active",
     "progress": 80,
+    "isMicelia": false,
     "nextStep": {
       "action": "Definir los criterios y rango de fechas para la extracción de recepciones a partir de facturas de compra.",
       "responsible": "Atika",
@@ -77,6 +80,7 @@ window.projectsData = [
     "description": "Sistema de atención y prefiltrado administrativo/triage por WhatsApp para clínica de fisioterapia utilizando la plataforma Runamatic.",
     "status": "active",
     "progress": 20,
+    "isMicelia": false,
     "nextStep": {
       "action": "Reunión con el cliente para definir reglas de triage y alcance del MVP.",
       "responsible": "Diego R.",
@@ -98,12 +102,33 @@ window.projectsData = [
     ]
   },
   {
+    "id": "zenfit",
+    "name": "Proyecto Zenfit",
+    "category": "IA & Bot",
+    "description": "Automatización y plataforma de gestión para el centro de entrenamiento Zenfit, integrando agendamiento inteligente y recordatorios automatizados.",
+    "status": "active",
+    "progress": 15,
+    "isMicelia": true,
+    "nextStep": {
+      "action": "Coordinar reunión inicial con el cliente para definir los flujos clave de turnos y diseño de interfaz.",
+      "responsible": "Diego R.",
+      "deadline": "2026-06-03"
+    },
+    "history": [
+      {
+        "date": "2026-05-28",
+        "note": "Creación del archivo maestro del proyecto e incorporación del alcance inicial de automatización y turnos en MicelIA."
+      }
+    ]
+  },
+  {
     "id": "nl2query",
     "name": "NL2Query (VB6 a SQL)",
     "category": "IA & Python",
     "description": "Traductor de lenguaje natural a sentencias SQL sobre vistas del ERP, integrado como sidecar HTTP local para la aplicación legacy en Visual Basic 6.",
     "status": "active",
     "progress": 50,
+    "isMicelia": false,
     "nextStep": {
       "action": "Gestión de suscripción para habilitar la API real de Anthropic (Claude) en el sidecar local.",
       "responsible": "Atika",

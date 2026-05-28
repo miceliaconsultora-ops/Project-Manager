@@ -70,7 +70,7 @@ El sistema automatizado de sincronización se compone de tres piezas clave:
     *   Controla el flujo de excepciones para evitar que PowerShell aborte la ejecución con las salidas de progreso habituales de Git en stderr.
 
 3.  **Tarea Programada en Windows (`ProjectManager-DailySync`):**
-    Mediante el script [schedule_task.ps1](file:///c:/Antigravity/Project%20Manager/schedule_task.ps1) se registra una tarea programada diaria a nivel de usuario en Windows que corre a las **19:00**. Esta tarea arranca `push_changes.ps1` en segundo plano (modo oculto).
+    Mediante el script [schedule_task.ps1](file:///c:/Antigravity/Project%20Manager/schedule_task.ps1) se registra una tarea programada diaria a nivel de usuario en Windows que corre a las **02:00**. Esta tarea arranca `push_changes.ps1` en segundo plano (modo oculto).
 
 ---
 
@@ -105,7 +105,6 @@ Para que un proyecto sea detectado e incorporado correctamente al Dashboard por 
 ---
 
 ## Registro de Avance
+- 2026-05-28: Modificado el horario de sincronización automática a las 02:00 y reestructurada la visualización de proyectos generales vs MicelIA en el dashboard.
 - 2026-05-27: Desarrollado el script de sincronización local (sync_projects.py) y la automatización del push diario a GitHub (push_changes.ps1/schedule_task.ps1).
 - 2026-05-27: Se crea el archivo maestro del Dashboard (proyecto-Dashboard.md) y se agrega como proyecto en el tablero.
-
-
