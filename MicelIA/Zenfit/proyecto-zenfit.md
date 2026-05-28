@@ -4,25 +4,17 @@ name: Proyecto Zenfit
 category: IA & Bot
 status: active
 progress: 15
-description: Automatización y plataforma de gestión para el centro de entrenamiento Zenfit, integrando agendamiento inteligente y recordatorios automatizados.
-next_step_action: Coordinar reunión inicial con el cliente para definir los flujos clave de turnos y diseño de interfaz.
-next_step_responsible: Diego R.
-next_step_deadline: 2026-06-03
+description: Acompañar a Zenfit en el onboarding de MiduApp, el CRM elegido para el gimnasio.
+next_step_action: Reunión para charlar sobre el onboarding de usuarios, planificar capacitaciones y escuchar detalles de migración. Estarán presentes Diego R., Midu y Zenfit.
+next_step_responsible: Diego R. y Cliente
+next_step_deadline: 2026-06-01
 ---
 
-# Proyecto Zenfit
+## CONSULTORIA A ZENFIT GYM, PARA ONBOARDING DE CRM.
+- LA FUNCIÓN SERÁ ACOMPAÑAR A ZENFIT EN EL ONBOARDING DE MIDUAPP, EL CRM ELEGIDO PARA EL GIMNASIO.
 
-## Descripcion general
-
-Plataforma de automatización y gestión para el centro de fitness y entrenamiento Zenfit. El sistema integrará asistentes virtuales de WhatsApp para optimizar la reserva de clases, la gestión de turnos, el envío de recordatorios automáticos de pago y la coordinación de entrenamientos personalizados con IA.
-
-## Decisiones tomadas
-
-| Tema | Decisión actual |
-| --- | --- |
-| Notificaciones | Usar la plataforma oficial de WhatsApp Business API mediante un proveedor de envíos masivos. |
-| Gestión de Turnos | Diseñar una interfaz web responsiva e intuitiva para que los alumnos reserven sus clases semanales de forma directa. |
-| Responsable General | Diego R. asume la cabeza técnica y estratégica del proyecto como parte de la unidad de negocio MicelIA. |
+## PROXIMOS PASOS. 
+- REUNIÓN FIJADA PARA EL DÍA LUNES 01/06 A LAS 14HS, PARA CHARLAR SOBRE EL ONBOARDING DE LOS USUARIOS Y PLANIFICAR POSIBLES CAPACITACIONES. ADEMÁS DE ESCUCHAR DETALLES DE MIGRACIÓN. ESTARÁN PRESENTES - DIEGO R. - MIDU - ZENFIT (Yanina y Verónica)
 
 ## Registro de Avance
-- 2026-05-28: Creación del archivo maestro del proyecto e incorporación del alcance inicial de automatización y turnos en MicelIA.
+- 2026-05-28: Inicio de la consultoría de onboarding para MiduApp CRM.

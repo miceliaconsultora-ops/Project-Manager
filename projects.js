@@ -30,11 +30,15 @@ window.projectsData = [
     "progress": 75,
     "isMicelia": false,
     "nextStep": {
-      "action": "Probar en celular con Expo Go (cámara, SQLite, sincronización) y compilar APK para preview.",
+      "action": "Evaluar la posibilidad de desarrollar Flask-API o ejecutable local para la hidratación y recolección de la app.",
       "responsible": "Diego R.",
-      "deadline": "2026-05-29"
+      "deadline": "2026-06-02"
     },
     "history": [
+      {
+        "date": "2026-05-28",
+        "note": "Surgió un inconveniente en el canal web. Se evalúa desarrollar una Flask-API o un ejecutable local para hidratar/recolectar datos de la app."
+      },
       {
         "date": "2026-05-26",
         "note": "Flujo completo de entrega probado con Google Drive y Apps Script en entorno de preview web."
@@ -82,11 +86,19 @@ window.projectsData = [
     "progress": 20,
     "isMicelia": false,
     "nextStep": {
-      "action": "Reunión con el cliente para definir reglas de triage y alcance del MVP.",
+      "action": "Presentación del presupuesto finalizado al cliente.",
       "responsible": "Diego R.",
-      "deadline": "2026-05-27"
+      "deadline": "2026-06-29"
     },
     "history": [
+      {
+        "date": "2026-05-28",
+        "note": "Presupuesto finalizado. Se acordó la presentación al cliente el lunes 29/06."
+      },
+      {
+        "date": "2026-05-27",
+        "note": "Reunión con el cliente concluida. Se definió que el MVP se realizará con Runamatic. Próximo paso: redacción de presupuesto."
+      },
       {
         "date": "2026-05-26",
         "note": "Reunión con el cliente programada para el 27/05 para definir alcance del MVP."
@@ -105,19 +117,19 @@ window.projectsData = [
     "id": "zenfit",
     "name": "Proyecto Zenfit",
     "category": "IA & Bot",
-    "description": "Automatización y plataforma de gestión para el centro de entrenamiento Zenfit, integrando agendamiento inteligente y recordatorios automatizados.",
+    "description": "Acompañar a Zenfit en el onboarding de MiduApp, el CRM elegido para el gimnasio.",
     "status": "active",
     "progress": 15,
     "isMicelia": true,
     "nextStep": {
-      "action": "Coordinar reunión inicial con el cliente para definir los flujos clave de turnos y diseño de interfaz.",
-      "responsible": "Diego R.",
-      "deadline": "2026-06-03"
+      "action": "Reunión para charlar sobre el onboarding de usuarios, planificar capacitaciones y escuchar detalles de migración. Estarán presentes Diego R., Midu y Zenfit.",
+      "responsible": "Diego R. y Cliente",
+      "deadline": "2026-06-01"
     },
     "history": [
       {
         "date": "2026-05-28",
-        "note": "Creación del archivo maestro del proyecto e incorporación del alcance inicial de automatización y turnos en MicelIA."
+        "note": "Inicio de la consultoría de onboarding para MiduApp CRM."
       }
     ]
   },

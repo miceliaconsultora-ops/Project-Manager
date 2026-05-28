@@ -614,7 +614,7 @@ header {
 }
 
 .micelia-section-title {
-  border-bottom: 2px solid rgba(77, 217, 192, 0.4);
+  border-bottom: 2px solid rgba(76, 122, 114, 0.2);
 }
 
 .business-unit-badge {
@@ -624,36 +624,36 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 0.2rem 0.6rem;
-  background-color: rgba(77, 217, 192, 0.15);
-  color: #2fa88f; /* Accent dim teal */
+  background-color: rgba(76, 122, 114, 0.08);
+  color: #4c7a72; /* Verde opaco */
   border-radius: 30px;
-  box-shadow: 0 2px 5px rgba(77, 217, 192, 0.05);
+  box-shadow: 0 2px 5px rgba(30, 42, 58, 0.02);
 }
 
 /* Matices de branding para las tarjetas de MicelIA */
 .project-card.micelia-card::before {
-  background: #4dd9c0; /* Teal signature de MicelIA */
+  background: #4c7a72; /* Verde opaco del branding de MicelIA */
 }
 
 .project-card.micelia-card:hover {
-  border-color: #4dd9c0;
-  box-shadow: 0 10px 15px -3px rgba(77, 217, 192, 0.1), 0 4px 6px -2px rgba(77, 217, 192, 0.05);
+  border-color: #5a8c82; /* Verde opaco */
+  box-shadow: 0 10px 15px -3px rgba(30, 42, 58, 0.05), 0 4px 6px -2px rgba(30, 42, 58, 0.02);
 }
 
 .project-card.micelia-card .next-step-box {
-  background: hsl(169, 50%, 97%); /* Fondo con tinte sutil de teal */
-  border-color: hsl(169, 40%, 91%);
+  background: rgba(30, 42, 58, 0.03); /* Gris azulado medio transparente */
+  border-color: rgba(30, 42, 58, 0.08);
 }
 
 .project-card.micelia-card .next-step-title {
-  color: #2fa88f; /* Accent dim teal */
+  color: #4c7a72; /* Verde opaco */
 }
 
 .project-card.micelia-card .progress-bar-fill {
-  background: #4dd9c0;
+  background: #4c7a72; /* Verde opaco */
 }
 
 .project-card.micelia-card .project-category {
-  background: hsl(169, 50%, 93%);
-  color: #1e2a3a; /* Dark navy del branding de MicelIA */
+  background: rgba(30, 42, 58, 0.05); /* Gris medio transparente */
+  color: #1e2a3a; /* Dark navy */
 }
