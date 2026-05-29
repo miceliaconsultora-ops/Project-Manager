@@ -225,5 +225,6 @@ Esto genera un APK instalable para prueba mas cercana al uso real.
 - 2026-05-28: Surgió un inconveniente en el canal web. Se evalúa desarrollar una Flask-API o un ejecutable local para hidratar/recolectar datos de la app.
 - 2026-05-26: Flujo completo de entrega probado con Google Drive y Apps Script en entorno de preview web.
 - 2026-05-26: Estructuración de base de datos local SQLite y reglas anti-reutilización verificadas con manifest_version.
+- 2026-05-28 20.30hs.: Ya creamos el task plan. Se hará una integración con Google Drive Desktop a cargo de Diego R. 
 
 

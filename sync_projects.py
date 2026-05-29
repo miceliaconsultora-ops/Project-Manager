@@ -85,7 +85,7 @@ def parse_markdown_project(file_path):
             
         # Buscar viñetas con fechas (ejemplo: - 2026-05-26: Detalle del avance)
         # Soporta guión (-), asterisco (*) y puede o no tener negritas en la fecha
-        bullet_pattern = re.compile(r"^\s*[-*]\s*(?:\*\*)?(\d{4}-\d{2}-\d{2})(?:\*\*)?\s*:\s*(.*)$", re.MULTILINE)
+        bullet_pattern = re.compile(r"^\s*[-*]\s*(?:\*\*)?(\d{4}-\d{2}-\d{2})(?:.*?)(?:\*\*)?\s*:(?!\d)\s*(.*)$", re.MULTILINE)
         
         for date_str, note in bullet_pattern.findall(history_text):
             project["history"].append({

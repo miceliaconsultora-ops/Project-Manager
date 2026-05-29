@@ -40,6 +40,10 @@ window.projectsData = [
         "note": "Surgió un inconveniente en el canal web. Se evalúa desarrollar una Flask-API o un ejecutable local para hidratar/recolectar datos de la app."
       },
       {
+        "date": "2026-05-28",
+        "note": "Ya creamos el task plan. Se hará una integración con Google Drive Desktop a cargo de Diego R."
+      },
+      {
         "date": "2026-05-26",
         "note": "Flujo completo de entrega probado con Google Drive y Apps Script en entorno de preview web."
       },
