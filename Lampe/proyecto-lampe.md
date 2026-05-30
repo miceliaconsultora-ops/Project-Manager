@@ -5,9 +5,9 @@ category: IA & Bot
 status: active
 progress: 20
 description: Sistema de atención y prefiltrado administrativo/triage por WhatsApp para clínica de fisioterapia utilizando la plataforma Runamatic.
-next_step_action: Presentación del presupuesto finalizado al cliente.
-next_step_responsible: Diego R.
-next_step_deadline: 2026-06-29
+next_step_action: Esperar respuesta del cliente sobre el presupuesto entregado.
+next_step_responsible: Cliente
+next_step_deadline: N/A
 ---
 
 # Proyecto Lampe
@@ -119,6 +119,7 @@ Despues de eso, el trabajo central sera reconstruir los flujos de recepcion y tu
 ---
 
 ## Registro de Avance
+- 2026-05-30: Presupuesto entregado. A la espera de la respuesta del cliente (plazo de 30 días para responder).
 - 2026-05-29: Presupuesto entregado: Próximos pasos, a la espera de la aprobación del cliente, para comennzar demo y MVP. 
 - 2026-05-28: Presupuesto finalizado. Se acordó la presentación al cliente el lunes 29/06.
 - 2026-05-27: Reunión con el cliente concluida. Se definió que el MVP se realizará con Runamatic. Próximo paso: redacción de presupuesto.

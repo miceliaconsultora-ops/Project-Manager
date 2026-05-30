@@ -2,26 +2,6 @@
 // ESTE ARCHIVO ES GENERADO AUTOMÁTICAMENTE por sync_projects.py. NO EDITAR DIRECTAMENTE.
 window.projectsData = [
   {
-    "id": "dashboard",
-    "name": "Tablero de Comando (Dashboard)",
-    "category": "Management",
-    "description": "Aplicación web estática y dinámica para organizar, filtrar y seguir en tiempo real todos los proyectos de desarrollo y gestión administrativa.",
-    "status": "completed",
-    "progress": 100,
-    "isMicelia": false,
-    "nextStep": {
-      "action": "Sin pendientes inmediatos.",
-      "responsible": "N/A",
-      "deadline": "N/A"
-    },
-    "history": [
-      {
-        "date": "N/A",
-        "note": "Sin novedades registradas en el archivo markdown."
-      }
-    ]
-  },
-  {
     "id": "control-stock",
     "name": "Control Stock V2",
     "category": "Mobile",
@@ -90,11 +70,15 @@ window.projectsData = [
     "progress": 20,
     "isMicelia": false,
     "nextStep": {
-      "action": "Presentación del presupuesto finalizado al cliente.",
-      "responsible": "Diego R.",
-      "deadline": "2026-06-29"
+      "action": "Esperar respuesta del cliente sobre el presupuesto entregado.",
+      "responsible": "Cliente",
+      "deadline": "N/A"
     },
     "history": [
+      {
+        "date": "2026-05-30",
+        "note": "Presupuesto entregado. A la espera de la respuesta del cliente (plazo de 30 días para responder)."
+      },
       {
         "date": "2026-05-29",
         "note": "Presupuesto entregado: Próximos pasos, a la espera de la aprobación del cliente, para comennzar demo y MVP."
@@ -127,17 +111,17 @@ window.projectsData = [
     "category": "Capacitación & IA",
     "description": "Brindar 4 charlas sobre IA en el mundo laboral bancario/financiero para la central gremial y gremio de trabajadores bancarios.",
     "status": "active",
-    "progress": 10,
+    "progress": 25,
     "isMicelia": true,
     "nextStep": {
-      "action": "Crear la web de inscripción al curso, nombrar cursos y crear contenidos.",
-      "responsible": "Diego R.",
-      "deadline": "2026-06-02"
+      "action": "Esperar información por parte del gremio para avanzar con los contenidos.",
+      "responsible": "Cliente",
+      "deadline": "N/A"
     },
     "history": [
       {
         "date": "2026-05-30",
-        "note": "Se creó el proyecto y la primera versión de la web de inscripción."
+        "note": "Primera versión de la web de inscripción creada. A la espera de información y contenidos por parte del gremio."
       }
     ]
   },

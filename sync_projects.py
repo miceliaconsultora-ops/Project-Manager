@@ -117,8 +117,8 @@ def main():
         for file in files:
             if file.endswith(".md"):
                 file_path = Path(root) / file
-                # Omitir archivos de documentación internos de brain/ y templates
-                if "antigravity-ide" in str(file_path) or "brain" in str(file_path):
+                # Omitir archivos de documentación internos de brain/, templates y el dashboard terminado
+                if "antigravity-ide" in str(file_path) or "brain" in str(file_path) or file_path.name == "proyecto-Dashboard.md":
                     continue
                 
                 project_data = parse_markdown_project(file_path)

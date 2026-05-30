@@ -1,15 +1,3 @@
----
-id: dashboard
-name: Tablero de Comando (Dashboard)
-category: Management
-status: completed
-progress: 100
-description: Aplicación web estática y dinámica para organizar, filtrar y seguir en tiempo real todos los proyectos de desarrollo y gestión administrativa.
-next_step_action: Sin pendientes inmediatos.
-next_step_responsible: N/A
-next_step_deadline: N/A
----
-
 # Proyecto Maestro - Tablero de Comando (Dashboard)
 
 Este archivo centraliza el contexto, los roles del equipo y la arquitectura del propio **Tablero de Comando** (Dashboard de Proyectos). Su objetivo es servir de referencia para los agentes de IA y los desarrolladores, evitando tener que reexplicar el contexto general del espacio de trabajo en cada sesión.
