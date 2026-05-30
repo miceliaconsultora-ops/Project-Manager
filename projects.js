@@ -96,6 +96,10 @@ window.projectsData = [
     },
     "history": [
       {
+        "date": "2026-05-29",
+        "note": "Presupuesto entregado: Próximos pasos, a la espera de la aprobación del cliente, para comennzar demo y MVP."
+      },
+      {
         "date": "2026-05-28",
         "note": "Presupuesto finalizado. Se acordó la presentación al cliente el lunes 29/06."
       },
@@ -114,6 +118,26 @@ window.projectsData = [
       {
         "date": "2026-05-26",
         "note": "Se definió priorizar Runamatic sobre desarrollo propio para acelerar el MVP y validar con clínica real."
+      }
+    ]
+  },
+  {
+    "id": "charla-siteba",
+    "name": "Charlas de IA para SITEBA",
+    "category": "Capacitación & IA",
+    "description": "Brindar 4 charlas sobre IA en el mundo laboral bancario/financiero para la central gremial y gremio de trabajadores bancarios.",
+    "status": "active",
+    "progress": 10,
+    "isMicelia": true,
+    "nextStep": {
+      "action": "Crear la web de inscripción al curso, nombrar cursos y crear contenidos.",
+      "responsible": "Diego R.",
+      "deadline": "2026-06-02"
+    },
+    "history": [
+      {
+        "date": "2026-05-30",
+        "note": "Se creó el proyecto y la primera versión de la web de inscripción."
       }
     ]
   },

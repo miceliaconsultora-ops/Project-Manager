@@ -119,6 +119,7 @@ Despues de eso, el trabajo central sera reconstruir los flujos de recepcion y tu
 ---
 
 ## Registro de Avance
+- 2026-05-29: Presupuesto entregado: Próximos pasos, a la espera de la aprobación del cliente, para comennzar demo y MVP. 
 - 2026-05-28: Presupuesto finalizado. Se acordó la presentación al cliente el lunes 29/06.
 - 2026-05-27: Reunión con el cliente concluida. Se definió que el MVP se realizará con Runamatic. Próximo paso: redacción de presupuesto.
 - 2026-05-26: Reunión con el cliente programada para el 27/05 para definir alcance del MVP.
