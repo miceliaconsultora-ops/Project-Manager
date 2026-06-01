@@ -5,8 +5,8 @@ category: Capacitación & IA
 status: active
 progress: 25
 description: Brindar 4 charlas sobre IA en el mundo laboral bancario/financiero para la central gremial y gremio de trabajadores bancarios.
-next_step_action: Esperar información por parte del gremio para avanzar con los contenidos.
-next_step_responsible: Cliente
+next_step_action: Incorporar logos y modificar formulario.
+next_step_responsible: Diego R.
 next_step_deadline: N/A
 ---
 
@@ -29,4 +29,5 @@ He sido contratado personalmente, para dar una suerte de curso o encuentros suce
 - COORDINAR CON EL GREMIO LA LOGÍSTICA DE LOS ENCUENTROS.                          
 
 ## Registro de Avance
+- 2026-05-31: Incorporar logos y modificar formulario. Esperar más información por parte del gremio.
 - 2026-05-30: Primera versión de la web de inscripción creada. A la espera de información y contenidos por parte del gremio.

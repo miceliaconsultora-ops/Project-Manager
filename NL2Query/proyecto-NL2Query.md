@@ -5,9 +5,9 @@ category: IA & Python
 status: active
 progress: 50
 description: Traductor de lenguaje natural a sentencias SQL sobre vistas del ERP, integrado como sidecar HTTP local para la aplicación legacy en Visual Basic 6.
-next_step_action: Gestión de suscripción para habilitar la API real de Anthropic (Claude) en el sidecar local.
-next_step_responsible: Atika
-next_step_deadline: 2026-05-28
+next_step_action: Continuar desarrollo.
+next_step_responsible: Diego R.
+next_step_deadline: 2026-06-07
 ---
 
 # NL2Query — Estado consolidado del proyecto
@@ -501,5 +501,6 @@ Decisiones a confirmar antes de arrancar:
 ---
 
 ## Registro de Avance
+- 2026-05-31: Revisión exitosa de sentencias SQL creadas por la API.
 - 2026-05-26: Stress test finalizado con éxito: 48/48 consultas SQL ejecutadas de forma correcta contra GRUNBAU_PROD y BERTOOLS_PROD.
 - 2026-05-26: Estructuración de prompts semánticos por vista y base_rules consolidada para compatibilidad con SQL Server 2008 (compat-100).

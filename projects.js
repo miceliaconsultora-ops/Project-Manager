@@ -10,11 +10,15 @@ window.projectsData = [
     "progress": 75,
     "isMicelia": false,
     "nextStep": {
-      "action": "Evaluar la posibilidad de desarrollar Flask-API o ejecutable local para la hidratación y recolección de la app.",
-      "responsible": "Diego R.",
-      "deadline": "2026-06-02"
+      "action": "Presentar documento técnico al cliente.",
+      "responsible": "Atika",
+      "deadline": "N/A"
     },
     "history": [
+      {
+        "date": "2026-05-31",
+        "note": "Se generó documento técnico para presentar al cliente. Debe presentarse, responsable. Atika"
+      },
       {
         "date": "2026-05-28",
         "note": "Surgió un inconveniente en el canal web. Se evalúa desarrollar una Flask-API o un ejecutable local para hidratar/recolectar datos de la app."
@@ -114,11 +118,15 @@ window.projectsData = [
     "progress": 25,
     "isMicelia": true,
     "nextStep": {
-      "action": "Esperar información por parte del gremio para avanzar con los contenidos.",
-      "responsible": "Cliente",
+      "action": "Incorporar logos y modificar formulario.",
+      "responsible": "Diego R.",
       "deadline": "N/A"
     },
     "history": [
+      {
+        "date": "2026-05-31",
+        "note": "Incorporar logos y modificar formulario. Esperar más información por parte del gremio."
+      },
       {
         "date": "2026-05-30",
         "note": "Primera versión de la web de inscripción creada. A la espera de información y contenidos por parte del gremio."
@@ -154,11 +162,15 @@ window.projectsData = [
     "progress": 50,
     "isMicelia": false,
     "nextStep": {
-      "action": "Gestión de suscripción para habilitar la API real de Anthropic (Claude) en el sidecar local.",
-      "responsible": "Atika",
-      "deadline": "2026-05-28"
+      "action": "Continuar desarrollo.",
+      "responsible": "Diego R.",
+      "deadline": "2026-06-07"
     },
     "history": [
+      {
+        "date": "2026-05-31",
+        "note": "Revisión exitosa de sentencias SQL creadas por la API."
+      },
       {
         "date": "2026-05-26",
         "note": "Stress test finalizado con éxito: 48/48 consultas SQL ejecutadas de forma correcta contra GRUNBAU_PROD y BERTOOLS_PROD."
