@@ -16,6 +16,10 @@ window.projectsData = [
     },
     "history": [
       {
+        "date": "2026-06-01",
+        "note": "Se modificó la modalidad de entrega. Se agregó posibilidad de envío one touch de la carga terminada de 1 cliente."
+      },
+      {
         "date": "2026-05-31",
         "note": "Se generó documento técnico para presentar al cliente. Debe presentarse, responsable. Atika"
       },
@@ -147,6 +151,10 @@ window.projectsData = [
       "deadline": "2026-06-01"
     },
     "history": [
+      {
+        "date": "2026-06-01",
+        "note": "Reunión con Zenfit. Se definieron datos 100% necesarios y no negociables que debe incluirse."
+      },
       {
         "date": "2026-05-28",
         "note": "Inicio de la consultoría de onboarding para MiduApp CRM."

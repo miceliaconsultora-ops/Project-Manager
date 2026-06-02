@@ -504,3 +504,8 @@ Decisiones a confirmar antes de arrancar:
 - 2026-05-31: Revisión exitosa de sentencias SQL creadas por la API.
 - 2026-05-26: Stress test finalizado con éxito: 48/48 consultas SQL ejecutadas de forma correcta contra GRUNBAU_PROD y BERTOOLS_PROD.
 - 2026-05-26: Estructuración de prompts semánticos por vista y base_rules consolidada para compatibilidad con SQL Server 2008 (compat-100).
+
+-2026-06-01 Finalizada etapa M2, capas de seguridad probadas. Finalizado todo desarrollo posible fuera de VB6 de M3, se creo el archivo .bas, se desarrollo el código necesario, solo falta la incorporación y compilación en VB6, para hacer una prueba.  
+
+## PROXIMOS PASOS:
+- DIEGO B. debe incorporar el código y el formulario de prueba a VB6 y luego pasar el instalador, para correr la versión de prueba en mi máquina. - Plazo hasta el 06-06-2026.

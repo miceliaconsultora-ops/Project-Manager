@@ -18,3 +18,10 @@ next_step_deadline: 2026-06-01
 
 ## Registro de Avance
 - 2026-05-28: Inicio de la consultoría de onboarding para MiduApp CRM.
+
+- 2026-06-01: Reunión con Zenfit. Se definieron datos 100% necesarios y no negociables que debe incluirse. 
+
+## PROXIMOS PASOS. 
+- ZENFIT probará la aplicación tomando nota de todo lo que desean modificar. 
+- Diego R. comunicará los resultados de la reunión con Midu, se acordará una nueva reunión con Zenfit y Midu, luego de las pruebas para fijar los últimos ajustes innegociables y una fecha de comienzo de transición/implementación. 
+- PLAZO: Próxima reunión, semana próxima. 

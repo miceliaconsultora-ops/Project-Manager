@@ -227,4 +227,11 @@ Esto genera un APK instalable para prueba mas cercana al uso real.
 - 2026-05-26: Estructuración de base de datos local SQLite y reglas anti-reutilización verificadas con manifest_version.
 - 2026-05-28 20.30hs.: Ya creamos el task plan. Se hará una integración con Google Drive Desktop a cargo de Diego R. 
 - 2026-05-31: Se generó documento técnico para presentar al cliente. Debe presentarse, responsable. Atika
+- 2026-06-01:  Se modificó la modalidad de entrega. Se agregó posibilidad de envío one touch de la carga terminada de 1 cliente. 
+- SE HIZO EL  PRESUPUESTO Y DOCUMENTO TECNICO PARA EL CLIENTE. 
 
+
+# [2026-06-01] - PROXIMOS PASOS. 
+
+- DESARROLLO DE LA APK.
+- TESTEO DE LA APK.
