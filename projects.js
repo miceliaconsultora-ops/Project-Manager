@@ -17,7 +17,7 @@ window.projectsData = [
     "history": [
       {
         "date": "2026-06-01",
-        "note": "Se modificó la modalidad de entrega (posibilidad de envío one touch de la carga terminada por cliente) y se confeccionó el presupuesto y documento técnico para el cliente. | # [2026-06-01] - PROXIMOS PASOS. | DESARROLLO DE LA APK. | TESTEO DE LA APK. | DESARROLLOS A CARGO DE DIEGO R. | PLAZO 06-06-2026"
+        "note": "Se modificó la modalidad de entrega (posibilidad de envío one touch de la carga terminada por cliente) y se confeccionó el presupuesto y documento técnico para el cliente."
       },
       {
         "date": "2026-05-31",

@@ -78,8 +78,8 @@ def parse_markdown_project(file_path):
     
     if history_section_match:
         history_text = history_section_match.group(1)
-        # Cortar si empieza otra sección ## posterior
-        next_header_match = re.search(r"##\s+", history_text)
+        # Cortar si empieza otra sección posterior (cualquier encabezado #, ##, ###, etc.)
+        next_header_match = re.search(r"\r?\n#+\s+", history_text)
         if next_header_match:
             history_text = history_text[:next_header_match.start()]
             
