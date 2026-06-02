@@ -83,16 +83,50 @@ def parse_markdown_project(file_path):
         if next_header_match:
             history_text = history_text[:next_header_match.start()]
             
-        # Buscar viñetas con fechas (ejemplo: - 2026-05-26: Detalle del avance)
-        # Soporta guión (-), asterisco (*) y puede o no tener negritas en la fecha
-        bullet_pattern = re.compile(r"^\s*[-*]\s*(?:\*\*)?(\d{4}-\d{2}-\d{2})(?:.*?)(?:\*\*)?\s*:(?!\d)\s*(.*)$", re.MULTILINE)
+        # Parsear líneas de historial secuencialmente y con tolerancia
+        history_list = []
+        current_entry = None
         
-        for date_str, note in bullet_pattern.findall(history_text):
-            project["history"].append({
-                "date": date_str.strip(),
-                "note": note.strip()
-            })
+        # Patrón para detectar viñetas que comienzan con fecha
+        # Soporta:
+        # - 2026-06-01: Detalle del avance
+        # -2026-06-01 Finalizada etapa...
+        # - 2026-05-28 20.30hs.: Detalle del avance
+        bullet_pattern = re.compile(
+            r"^\s*[-*]\s*(?:\*\?)?(\d{4}-\d{2}-\d{2})(.*?)(?:\*\*)?\s*(?:[:\-]?\s+|\s*:\s*)(.*)$"
+        )
+        
+        for line in history_text.splitlines():
+            line_str = line.strip()
+            if not line_str:
+                continue
+                
+            m = bullet_pattern.match(line_str)
+            if m:
+                if current_entry:
+                    history_list.append(current_entry)
+                
+                date_str = m.group(1).strip()
+                extra_info = m.group(2).strip()
+                note = m.group(3).strip()
+                
+                if extra_info:
+                    note = f"({extra_info}) {note}"
+                    
+                current_entry = {
+                    "date": date_str,
+                    "note": note
+                }
+            else:
+                # Línea de continuación o sub-viñeta (limpiar guión inicial si lo tiene)
+                if current_entry:
+                    clean_line = re.sub(r"^\s*[-*+]\s*", "", line_str)
+                    current_entry["note"] += " | " + clean_line
+                    
+        if current_entry:
+            history_list.append(current_entry)
             
+        project["history"] = history_list
         # Ordenar el historial por fecha descendente (más recientes primero)
         project["history"].sort(key=lambda x: x["date"], reverse=True)
 

@@ -3,11 +3,11 @@ id: zenfit
 name: Proyecto Zenfit
 category: IA & Bot
 status: active
-progress: 15
+progress: 25
 description: Acompañar a Zenfit en el onboarding de MiduApp, el CRM elegido para el gimnasio.
-next_step_action: Reunión para charlar sobre el onboarding de usuarios, planificar capacitaciones y escuchar detalles de migración. Estarán presentes Diego R., Midu y Zenfit.
+next_step_action: Zenfit probará la app; Diego R. comunicará resultados y coordinará nueva reunión.
 next_step_responsible: Diego R. y Cliente
-next_step_deadline: 2026-06-01
+next_step_deadline: N/A
 ---
 
 ## CONSULTORIA A ZENFIT GYM, PARA ONBOARDING DE CRM.

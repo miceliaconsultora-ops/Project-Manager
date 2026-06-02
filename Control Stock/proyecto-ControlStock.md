@@ -5,9 +5,9 @@ category: Mobile
 status: active
 progress: 75
 description: Aplicación móvil para la preparación de entregas contra stock y control de despacho por cliente, integrada con Google Drive y Apps Script.
-next_step_action: Presentar documento técnico al cliente.
-next_step_responsible: Atika
-next_step_deadline: N/A
+next_step_action: Desarrollo y testeo de la APK.
+next_step_responsible: Diego R.
+next_step_deadline: 2026-06-06
 ---
 
 # Proyecto - Control Stock V2
@@ -227,11 +227,12 @@ Esto genera un APK instalable para prueba mas cercana al uso real.
 - 2026-05-26: Estructuración de base de datos local SQLite y reglas anti-reutilización verificadas con manifest_version.
 - 2026-05-28 20.30hs.: Ya creamos el task plan. Se hará una integración con Google Drive Desktop a cargo de Diego R. 
 - 2026-05-31: Se generó documento técnico para presentar al cliente. Debe presentarse, responsable. Atika
-- 2026-06-01:  Se modificó la modalidad de entrega. Se agregó posibilidad de envío one touch de la carga terminada de 1 cliente. 
-- SE HIZO EL  PRESUPUESTO Y DOCUMENTO TECNICO PARA EL CLIENTE. 
+- 2026-06-01: Se modificó la modalidad de entrega (posibilidad de envío one touch de la carga terminada por cliente) y se confeccionó el presupuesto y documento técnico para el cliente.
 
 
 # [2026-06-01] - PROXIMOS PASOS. 
 
 - DESARROLLO DE LA APK.
 - TESTEO DE LA APK.
+- DESARROLLOS A CARGO DE DIEGO R. 
+- PLAZO 06-06-2026

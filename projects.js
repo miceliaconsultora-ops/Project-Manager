@@ -10,14 +10,14 @@ window.projectsData = [
     "progress": 75,
     "isMicelia": false,
     "nextStep": {
-      "action": "Presentar documento técnico al cliente.",
-      "responsible": "Atika",
-      "deadline": "N/A"
+      "action": "Desarrollo y testeo de la APK.",
+      "responsible": "Diego R.",
+      "deadline": "2026-06-06"
     },
     "history": [
       {
         "date": "2026-06-01",
-        "note": "Se modificó la modalidad de entrega. Se agregó posibilidad de envío one touch de la carga terminada de 1 cliente."
+        "note": "Se modificó la modalidad de entrega (posibilidad de envío one touch de la carga terminada por cliente) y se confeccionó el presupuesto y documento técnico para el cliente. | # [2026-06-01] - PROXIMOS PASOS. | DESARROLLO DE LA APK. | TESTEO DE LA APK. | DESARROLLOS A CARGO DE DIEGO R. | PLAZO 06-06-2026"
       },
       {
         "date": "2026-05-31",
@@ -29,7 +29,7 @@ window.projectsData = [
       },
       {
         "date": "2026-05-28",
-        "note": "Ya creamos el task plan. Se hará una integración con Google Drive Desktop a cargo de Diego R."
+        "note": "20.30hs.: Ya creamos el task plan. Se hará una integración con Google Drive Desktop a cargo de Diego R."
       },
       {
         "date": "2026-05-26",
@@ -122,11 +122,15 @@ window.projectsData = [
     "progress": 25,
     "isMicelia": true,
     "nextStep": {
-      "action": "Incorporar logos y modificar formulario.",
+      "action": "Crear la web de inscripción, nombrar cursos y crear contenidos.",
       "responsible": "Diego R.",
-      "deadline": "N/A"
+      "deadline": "2026-06-02"
     },
     "history": [
+      {
+        "date": "2026-06-01",
+        "note": "Modificado Formulario."
+      },
       {
         "date": "2026-05-31",
         "note": "Incorporar logos y modificar formulario. Esperar más información por parte del gremio."
@@ -143,12 +147,12 @@ window.projectsData = [
     "category": "IA & Bot",
     "description": "Acompañar a Zenfit en el onboarding de MiduApp, el CRM elegido para el gimnasio.",
     "status": "active",
-    "progress": 15,
+    "progress": 25,
     "isMicelia": true,
     "nextStep": {
-      "action": "Reunión para charlar sobre el onboarding de usuarios, planificar capacitaciones y escuchar detalles de migración. Estarán presentes Diego R., Midu y Zenfit.",
+      "action": "Zenfit probará la app; Diego R. comunicará resultados y coordinará nueva reunión.",
       "responsible": "Diego R. y Cliente",
-      "deadline": "2026-06-01"
+      "deadline": "N/A"
     },
     "history": [
       {
@@ -167,14 +171,18 @@ window.projectsData = [
     "category": "IA & Python",
     "description": "Traductor de lenguaje natural a sentencias SQL sobre vistas del ERP, integrado como sidecar HTTP local para la aplicación legacy en Visual Basic 6.",
     "status": "active",
-    "progress": 50,
+    "progress": 60,
     "isMicelia": false,
     "nextStep": {
-      "action": "Continuar desarrollo.",
-      "responsible": "Diego R.",
-      "deadline": "2026-06-07"
+      "action": "Incorporar código y formulario de prueba a VB6 y pasar el instalador.",
+      "responsible": "Diego B.",
+      "deadline": "2026-06-06"
     },
     "history": [
+      {
+        "date": "2026-06-01",
+        "note": "Finalizada etapa M2, capas de seguridad probadas. Finalizado todo desarrollo posible fuera de VB6 de M3, se creó el archivo .bas, se desarrolló el código necesario, solo falta la incorporación y compilación en VB6 para hacer una prueba."
+      },
       {
         "date": "2026-05-31",
         "note": "Revisión exitosa de sentencias SQL creadas por la API."

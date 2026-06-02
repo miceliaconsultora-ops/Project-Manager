@@ -3,11 +3,11 @@ id: nl2query
 name: NL2Query (VB6 a SQL)
 category: IA & Python
 status: active
-progress: 50
+progress: 60
 description: Traductor de lenguaje natural a sentencias SQL sobre vistas del ERP, integrado como sidecar HTTP local para la aplicación legacy en Visual Basic 6.
-next_step_action: Continuar desarrollo.
-next_step_responsible: Diego R.
-next_step_deadline: 2026-06-07
+next_step_action: Incorporar código y formulario de prueba a VB6 y pasar el instalador.
+next_step_responsible: Diego B.
+next_step_deadline: 2026-06-06
 ---
 
 # NL2Query — Estado consolidado del proyecto
@@ -505,7 +505,7 @@ Decisiones a confirmar antes de arrancar:
 - 2026-05-26: Stress test finalizado con éxito: 48/48 consultas SQL ejecutadas de forma correcta contra GRUNBAU_PROD y BERTOOLS_PROD.
 - 2026-05-26: Estructuración de prompts semánticos por vista y base_rules consolidada para compatibilidad con SQL Server 2008 (compat-100).
 
--2026-06-01 Finalizada etapa M2, capas de seguridad probadas. Finalizado todo desarrollo posible fuera de VB6 de M3, se creo el archivo .bas, se desarrollo el código necesario, solo falta la incorporación y compilación en VB6, para hacer una prueba.  
+- 2026-06-01: Finalizada etapa M2, capas de seguridad probadas. Finalizado todo desarrollo posible fuera de VB6 de M3, se creó el archivo .bas, se desarrolló el código necesario, solo falta la incorporación y compilación en VB6 para hacer una prueba.
 
 ## PROXIMOS PASOS:
 - DIEGO B. debe incorporar el código y el formulario de prueba a VB6 y luego pasar el instalador, para correr la versión de prueba en mi máquina. - Plazo hasta el 06-06-2026.
