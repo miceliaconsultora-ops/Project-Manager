@@ -7,11 +7,12 @@ progress: 80
 description: Pipeline de extracción de ítems de facturas de compra (digitales y escaneadas vía OCR Tesseract) para construir un maestro unificado de productos con precios de referencia.
 next_step_action: Definir los criterios y rango de fechas para la extracción de recepciones a partir de facturas de compra.
 next_step_responsible: Atika
-next_step_deadline: 2026-05-30
+next_step_deadline: 2026-06-06
 ---
 
 # Proyecto Maestro de Productos Grunbau
 *Registro de avance — última actualización: 26 mayo 2026*
+- EXTENDER PLAZO HASTA EL 06-06-2026
 
 ---
 

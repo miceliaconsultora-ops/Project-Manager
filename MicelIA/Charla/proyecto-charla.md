@@ -5,9 +5,9 @@ category: Capacitación & IA
 status: active
 progress: 25
 description: Brindar 4 charlas sobre IA en el mundo laboral bancario/financiero para la central gremial y gremio de trabajadores bancarios.
-next_step_action: Crear la web de inscripción, nombrar cursos y crear contenidos.
+next_step_action: Solicitar información al gremio para completar la web, empezar a diseñar la tabla, crear el guión y todo el material de soporte.
 next_step_responsible: Diego R.
-next_step_deadline: 2026-06-02
+next_step_deadline: 2026-06-06
 ---
 
 ## PROYECTO CHARLA SITEBA
@@ -34,5 +34,8 @@ He sido contratado personalmente, para dar una suerte de curso o encuentros suce
 - 2026-06-01: Modificado Formulario. 
 ## Próximos pasos: 
 - Modificación de descripción del curso. A cargo de Diego R.
+## Actualización 2026-06-02
 - Solicitar información al gremio para completar la web.
+- Empezar a diseñar la tabla, crear el guión y todo el material de soporte.  
+- Todo a cargo de Diego R. 
 - Plazo: 2026-06-06

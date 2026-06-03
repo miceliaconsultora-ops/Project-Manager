@@ -5,9 +5,9 @@ category: Mobile
 status: active
 progress: 75
 description: Aplicación móvil para la preparación de entregas contra stock y control de despacho por cliente, integrada con Google Drive y Apps Script.
-next_step_action: Desarrollo y testeo de la APK.
-next_step_responsible: Diego R.
-next_step_deadline: 2026-06-06
+next_step_action: Prueba efectiva, desarrollo de VB6, test stress y producción efectiva.
+next_step_responsible: Diego B.
+next_step_deadline: 2026-06-13
 ---
 
 # Proyecto - Control Stock V2
@@ -236,3 +236,9 @@ Esto genera un APK instalable para prueba mas cercana al uso real.
 - TESTEO DE LA APK.
 - DESARROLLOS A CARGO DE DIEGO R. 
 - PLAZO 06-06-2026
+
+## 2026-06-03 ACTUALIZACION
+- APK TERMINADA. 
+## PROXIMOS PASOS
+- PRUEBA EFECTIVA, DESARROLLO DE VB6, TEST STRESS Y PRODUCCIÓN EFECTIVA. A CARGO DE DIEGO B. 
+- PLAZO: 10 DIAS. 

@@ -10,9 +10,9 @@ window.projectsData = [
     "progress": 75,
     "isMicelia": false,
     "nextStep": {
-      "action": "Desarrollo y testeo de la APK.",
-      "responsible": "Diego R.",
-      "deadline": "2026-06-06"
+      "action": "Prueba efectiva, desarrollo de VB6, test stress y producción efectiva.",
+      "responsible": "Diego B.",
+      "deadline": "2026-06-13"
     },
     "history": [
       {
@@ -52,7 +52,7 @@ window.projectsData = [
     "nextStep": {
       "action": "Definir los criterios y rango de fechas para la extracción de recepciones a partir de facturas de compra.",
       "responsible": "Atika",
-      "deadline": "2026-05-30"
+      "deadline": "2026-06-06"
     },
     "history": [
       {
@@ -122,9 +122,9 @@ window.projectsData = [
     "progress": 25,
     "isMicelia": true,
     "nextStep": {
-      "action": "Crear la web de inscripción, nombrar cursos y crear contenidos.",
+      "action": "Solicitar información al gremio para completar la web, empezar a diseñar la tabla, crear el guión y todo el material de soporte.",
       "responsible": "Diego R.",
-      "deadline": "2026-06-02"
+      "deadline": "2026-06-06"
     },
     "history": [
       {
@@ -150,9 +150,9 @@ window.projectsData = [
     "progress": 25,
     "isMicelia": true,
     "nextStep": {
-      "action": "Zenfit probará la app; Diego R. comunicará resultados y coordinará nueva reunión.",
-      "responsible": "Diego R. y Cliente",
-      "deadline": "N/A"
+      "action": "Transmitir a Midu inquietudes respecto de fechas de débito e ingresos y renovación de membresías.",
+      "responsible": "Diego R.",
+      "deadline": "2026-06-04"
     },
     "history": [
       {
