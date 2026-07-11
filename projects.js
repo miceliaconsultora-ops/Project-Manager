@@ -187,17 +187,25 @@ window.projectsData = [
     "category": "IA & Bot",
     "description": "Acompañar a Zenfit en el onboarding de MiduApp, el CRM elegido para el gimnasio.",
     "status": "active",
-    "progress": 25,
+    "progress": 60,
     "isMicelia": true,
     "nextStep": {
-      "action": "Transmitir a Midu inquietudes respecto de fechas de débito e ingresos y renovación de membresías.",
-      "responsible": "Diego R.",
-      "deadline": "2026-06-04"
+      "action": "Pago servicios -- A cargo de Zenfit.",
+      "responsible": "Cliente (Zenfit)",
+      "deadline": "2026-07-31"
     },
     "history": [
       {
+        "date": "2026-07-04",
+        "note": "Implementación en marcha, a cargo de Midu."
+      },
+      {
+        "date": "2026-06-03",
+        "note": "Primer contacto con la app y datos de CBU brindados a Midu."
+      },
+      {
         "date": "2026-06-01",
-        "note": "Reunión con Zenfit. Se definieron datos 100% necesarios y no negociables que debe incluirse."
+        "note": "Reunión con Zenfit. Se definieron datos 100% necesarios y no negociables que deben incluirse."
       },
       {
         "date": "2026-05-28",
