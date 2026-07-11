@@ -667,3 +667,104 @@ header {
   background: rgba(30, 42, 58, 0.05); /* Gris medio transparente */
   color: #1e2a3a; /* Dark navy */
 }
+
+/* Secciones Colapsables */
+.collapsible-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--shadow-premium);
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.collapsible-section:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: var(--border-focus);
+}
+
+.section-header {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 1.75rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+.section-header:hover {
+  background: var(--bg-card-hover);
+}
+
+.section-header-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-header-title h2 {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.toggle-icon {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+
+.section-header[aria-expanded="true"] .toggle-icon {
+  transform: rotate(90deg);
+}
+
+.project-count-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: var(--primary-glow);
+  color: var(--primary);
+  padding: 0.2rem 0.6rem;
+  border-radius: 30px;
+  transition: var(--transition-smooth);
+}
+
+.section-status-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.text-active {
+  color: var(--color-active);
+}
+
+.section-content {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.section-content-inner {
+  overflow: hidden;
+}
+
+.section-content.collapsed {
+  grid-template-rows: 0fr;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+

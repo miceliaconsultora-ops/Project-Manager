@@ -3,10 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const projects = window.projectsData || [];
   
   // Selectores DOM
-  const projectsGrid = document.getElementById("projects-grid");
-  const miceliaProjectsGrid = document.getElementById("micelia-projects-grid");
-  const generalProjectsSection = document.getElementById("general-projects-section");
-  const miceliaProjectsSection = document.getElementById("micelia-projects-section");
+  const activeProjectsGrid = document.getElementById("active-projects-grid");
+  const inactiveProjectsGrid = document.getElementById("inactive-projects-grid");
   const statsContainer = document.getElementById("stats-bar");
   const filterButtonsOwner = document.querySelectorAll("[data-filter-owner]");
   const filterButtonsStatus = document.querySelectorAll("[data-filter-status]");
@@ -87,9 +85,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   // Renderizar Grilla de Proyectos
+  // Renderizar Grilla de Proyectos
   function renderProjects() {
-    projectsGrid.innerHTML = "";
-    miceliaProjectsGrid.innerHTML = "";
+    activeProjectsGrid.innerHTML = "";
+    inactiveProjectsGrid.innerHTML = "";
     
     // Filtrar proyectos
     const filteredProjects = projects.filter(project => {
@@ -101,8 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Ordenar proyectos: 1) En curso (active) primero, 2) Cercanía de fecha de próximo paso (deadline)
     filteredProjects.sort((a, b) => {
-      const aActive = a.status === "active" ? 1 : 0;
-      const bActive = b.status === "active" ? 1 : 0;
+      const aActive = (a.status === "active" || a.status === "pending-review") ? 1 : 0;
+      const bActive = (b.status === "active" || b.status === "pending-review") ? 1 : 0;
       
       if (aActive !== bActive) {
         return bActive - aActive; // Activo primero
@@ -122,35 +121,34 @@ document.addEventListener("DOMContentLoaded", () => {
       return 0;
     });
     
-    // Separar en Generales y MicelIA
-    const generalProjects = filteredProjects.filter(p => !p.isMicelia);
-    const miceliaProjects = filteredProjects.filter(p => p.isMicelia);
+    // Separar en Activos e Inactivos
+    const activeProjects = filteredProjects.filter(p => p.status === "active" || p.status === "pending-review");
+    const inactiveProjects = filteredProjects.filter(p => p.status === "completed" || p.status === "suspended");
     
-    if (filteredProjects.length === 0) {
-      generalProjectsSection.style.display = "block";
-      miceliaProjectsSection.style.display = "block";
-      projectsGrid.innerHTML = `
-        <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 2rem; color: var(--text-muted);">
-          <p style="font-size: 1.2rem; margin-bottom: 0.5rem;">No se encontraron proyectos con los filtros seleccionados.</p>
-          <p style="font-size: 0.9rem;">Prueba cambiando el responsable o el estado.</p>
+    // Actualizar contadores
+    document.getElementById("active-count").textContent = activeProjects.length;
+    document.getElementById("inactive-count").textContent = inactiveProjects.length;
+    
+    // Renderizar Activos
+    if (activeProjects.length === 0) {
+      activeProjectsGrid.innerHTML = `
+        <div style="grid-column: 1 / -1; text-align: center; padding: 3rem 2rem; color: var(--text-muted);">
+          <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">No hay proyectos activos con los filtros seleccionados.</p>
         </div>
       `;
-      return;
+    } else {
+      renderProjectList(activeProjects, activeProjectsGrid);
     }
     
-    // Ocultar o mostrar contenedores según cantidad de proyectos
-    if (generalProjects.length === 0) {
-      generalProjectsSection.style.display = "none";
+    // Renderizar Inactivos
+    if (inactiveProjects.length === 0) {
+      inactiveProjectsGrid.innerHTML = `
+        <div style="grid-column: 1 / -1; text-align: center; padding: 3rem 2rem; color: var(--text-muted);">
+          <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">No hay proyectos inactivos con los filtros seleccionados.</p>
+        </div>
+      `;
     } else {
-      generalProjectsSection.style.display = "block";
-      renderProjectList(generalProjects, projectsGrid);
-    }
-    
-    if (miceliaProjects.length === 0) {
-      miceliaProjectsSection.style.display = "none";
-    } else {
-      miceliaProjectsSection.style.display = "block";
-      renderProjectList(miceliaProjects, miceliaProjectsGrid);
+      renderProjectList(inactiveProjects, inactiveProjectsGrid);
     }
   }
   
@@ -278,4 +276,20 @@ document.addEventListener("DOMContentLoaded", () => {
 // Función global para manejar el acordeón de historial
 window.toggleHistory = function(headerElement) {
   headerElement.classList.toggle("collapsed");
+};
+
+// Función global para manejar el acordeón de secciones del tablero
+window.toggleSection = function(sectionId) {
+  const section = document.getElementById(sectionId);
+  const header = section.querySelector(".section-header");
+  const content = section.querySelector(".section-content");
+  
+  const isExpanded = header.getAttribute("aria-expanded") === "true";
+  
+  header.setAttribute("aria-expanded", !isExpanded);
+  if (isExpanded) {
+    content.classList.add("collapsed");
+  } else {
+    content.classList.remove("collapsed");
+  }
 };

@@ -57,23 +57,42 @@
         </div>
       </section>
 
-      <!-- Contenedor de Proyectos Generales -->
-      <div id="general-projects-section" class="projects-section">
-        <h2 class="section-title">Proyectos Generales</h2>
-        <section class="projects-grid" id="projects-grid" aria-label="Lista de proyectos generales">
-          <!-- Rellenado dinámicamente por app.js -->
-        </section>
+      <!-- Sección Proyectos Activos -->
+      <div id="active-projects-section" class="collapsible-section">
+        <button class="section-header" onclick="toggleSection('active-projects-section')" aria-expanded="true">
+          <div class="section-header-title">
+            <span class="toggle-icon">▶</span>
+            <h2>Proyectos Activos</h2>
+            <span class="project-count-badge" id="active-count">0</span>
+          </div>
+          <span class="section-status-label text-active">En ejecución</span>
+        </button>
+        <div class="section-content">
+          <div class="section-content-inner">
+            <section class="projects-grid" id="active-projects-grid" aria-label="Lista de proyectos activos">
+              <!-- Rellenado dinámicamente por app.js -->
+            </section>
+          </div>
+        </div>
       </div>
 
-      <!-- Contenedor de Proyectos MicelIA -->
-      <div id="micelia-projects-section" class="projects-section">
-        <h2 class="section-title micelia-section-title">
-          Proyectos MicelIA
-          <span class="business-unit-badge">Diego R.</span>
-        </h2>
-        <section class="projects-grid" id="micelia-projects-grid" aria-label="Lista de proyectos MicelIA">
-          <!-- Rellenado dinámicamente por app.js -->
-        </section>
+      <!-- Sección Proyectos Inactivos -->
+      <div id="inactive-projects-section" class="collapsible-section">
+        <button class="section-header" onclick="toggleSection('inactive-projects-section')" aria-expanded="false">
+          <div class="section-header-title">
+            <span class="toggle-icon">▶</span>
+            <h2>Proyectos Inactivos</h2>
+            <span class="project-count-badge" id="inactive-count">0</span>
+          </div>
+          <span class="section-status-label text-muted">Completados / Suspendidos</span>
+        </button>
+        <div class="section-content collapsed">
+          <div class="section-content-inner">
+            <section class="projects-grid" id="inactive-projects-grid" aria-label="Lista de proyectos inactivos">
+              <!-- Rellenado dinámicamente por app.js -->
+            </section>
+          </div>
+        </div>
       </div>
     </main>
 
