@@ -202,7 +202,12 @@ document.addEventListener("DOMContentLoaded", () => {
       card.innerHTML = `
         <div>
           <div class="card-header">
-            <span class="project-category">${project.category}</span>
+            <div style="display: flex; gap: 8px; align-items: center;">
+              <span class="project-category">${project.category}</span>
+              <span class="company-badge ${project.isMicelia ? 'badge-micelia' : 'badge-atika'}">
+                ${project.isMicelia ? 'MicelIA' : 'Atika'}
+              </span>
+            </div>
             <span class="status-badge ${statusClass}">${statusLabel}</span>
           </div>
           

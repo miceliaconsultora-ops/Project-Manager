@@ -768,3 +768,24 @@ header {
   pointer-events: none;
 }
 
+/* Company/Unit Badges inside Project Cards */
+.company-badge {
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.badge-micelia {
+  background-color: rgba(76, 122, 114, 0.12);
+  color: #4c7a72; /* Verde opaco */
+}
+
+.badge-atika {
+  background-color: rgba(37, 99, 235, 0.08);
+  color: var(--primary); /* Azul Atika */
+}
+
+
