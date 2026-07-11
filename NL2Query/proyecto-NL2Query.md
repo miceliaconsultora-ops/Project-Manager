@@ -3,11 +3,11 @@ id: nl2query
 name: NL2Query (VB6 a SQL)
 category: IA & Python
 status: active
-progress: 60
+progress: 85
 description: Traductor de lenguaje natural a sentencias SQL sobre vistas del ERP, integrado como sidecar HTTP local para la aplicación legacy en Visual Basic 6.
-next_step_action: Incorporar código y formulario de prueba a VB6 y pasar el instalador.
+next_step_action: Compilar todo en el código fuente y hacer las pruebas previas a la salida a producción.
 next_step_responsible: Diego B.
-next_step_deadline: 2026-06-06
+next_step_deadline: A confirmar
 ---
 
 # NL2Query — Estado consolidado del proyecto
@@ -501,11 +501,11 @@ Decisiones a confirmar antes de arrancar:
 ---
 
 ## Registro de Avance
+- 2026-07-11: Se probó la integración de VB6 con el sidecar de manera exitosa y anduvo perfectamente. Ahora solo queda compilar todo en el código fuente y hacer las pruebas previas a la salida a producción.
+- 2026-06-01: Finalizada etapa M2, capas de seguridad probadas. Finalizado todo desarrollo posible fuera de VB6 de M3, se creó el archivo .bas, se desarrolló el código necesario, solo falta la incorporación y compilación en VB6 para hacer una prueba.
 - 2026-05-31: Revisión exitosa de sentencias SQL creadas por la API.
 - 2026-05-26: Stress test finalizado con éxito: 48/48 consultas SQL ejecutadas de forma correcta contra GRUNBAU_PROD y BERTOOLS_PROD.
 - 2026-05-26: Estructuración de prompts semánticos por vista y base_rules consolidada para compatibilidad con SQL Server 2008 (compat-100).
 
-- 2026-06-01: Finalizada etapa M2, capas de seguridad probadas. Finalizado todo desarrollo posible fuera de VB6 de M3, se creó el archivo .bas, se desarrolló el código necesario, solo falta la incorporación y compilación en VB6 para hacer una prueba.
-
 ## PROXIMOS PASOS:
-- DIEGO B. debe incorporar el código y el formulario de prueba a VB6 y luego pasar el instalador, para correr la versión de prueba en mi máquina. - Plazo hasta el 06-06-2026.
+- Diego Barraza debe compilar todo en el código fuente del ERP y hacer las pruebas previas a la salida a producción. - Plazo: A confirmar.

@@ -119,14 +119,38 @@ window.projectsData = [
     "category": "Capacitación & IA",
     "description": "Brindar 4 charlas sobre IA en el mundo laboral bancario/financiero para la central gremial y gremio de trabajadores bancarios.",
     "status": "active",
-    "progress": 25,
+    "progress": 50,
     "isMicelia": true,
     "nextStep": {
-      "action": "Solicitar información al gremio para completar la web, empezar a diseñar la tabla, crear el guión y todo el material de soporte.",
+      "action": "Dictar el Segundo Encuentro (14 de julio a las 17:30 hs) y procesar/subir sus materiales y grabación.",
       "responsible": "Diego R.",
-      "deadline": "2026-06-06"
+      "deadline": "2026-07-14"
     },
     "history": [
+      {
+        "date": "2026-07-11",
+        "note": "Se agregaron nuevos materiales del Segundo Encuentro (Material de apoyo e Informe de geopolítica) y se sumó el Informe PyMEs Argentina 2026 al Primer Encuentro. Se reorganizaron los archivos físicos en subcarpetas (Encuentro 1 y Encuentro 2) y se actualizaron los enlaces en index.html, renombrando el acordeón a su título oficial \"Adopción Institucional: El rol del trabajador\"."
+      },
+      {
+        "date": "2026-07-02",
+        "note": "Se anunció el Segundo Encuentro para el 14 de julio a las 17:30 hs con su temario detallado en el Hero (elemento colapsable interactivo). Se sumó popup modal de bienvenida para inscripción y se retiraron accesos directos de Zoom por seguridad."
+      },
+      {
+        "date": "2026-06-30",
+        "note": "Reorganización total de la sección de materiales en un acordeón interactivo por encuentros, subiendo el video del Primer Encuentro con carga diferida (lazy-load) y miniatura de YouTube, además de la presentación del mismo."
+      },
+      {
+        "date": "2026-06-23",
+        "note": "Integración de accesos e ID de Zoom en Hero, sección de lugar y pantalla de éxito. Incorporación de dos nuevos materiales de apoyo descargables."
+      },
+      {
+        "date": "2026-06-21",
+        "note": "Descarga y configuración local de 4 nuevos materiales (Estatutos, Decretos y simulador de prompts). Rediseño de sección materiales a una grilla de 5 tarjetas interactivas con links de respaldo a Drive."
+      },
+      {
+        "date": "2026-06-16",
+        "note": "Descarga e integración de primer material de apoyo local (.docx) para Charla 1. Reemplazo de placeholder por card real con botón de descarga y prueba local."
+      },
       {
         "date": "2026-06-01",
         "note": "Modificado Formulario."
@@ -171,14 +195,18 @@ window.projectsData = [
     "category": "IA & Python",
     "description": "Traductor de lenguaje natural a sentencias SQL sobre vistas del ERP, integrado como sidecar HTTP local para la aplicación legacy en Visual Basic 6.",
     "status": "active",
-    "progress": 60,
+    "progress": 85,
     "isMicelia": false,
     "nextStep": {
-      "action": "Incorporar código y formulario de prueba a VB6 y pasar el instalador.",
+      "action": "Compilar todo en el código fuente y hacer las pruebas previas a la salida a producción.",
       "responsible": "Diego B.",
-      "deadline": "2026-06-06"
+      "deadline": "A confirmar"
     },
     "history": [
+      {
+        "date": "2026-07-11",
+        "note": "Se probó la integración de VB6 con el sidecar de manera exitosa y anduvo perfectamente. Ahora solo queda compilar todo en el código fuente y hacer las pruebas previas a la salida a producción."
+      },
       {
         "date": "2026-06-01",
         "note": "Finalizada etapa M2, capas de seguridad probadas. Finalizado todo desarrollo posible fuera de VB6 de M3, se creó el archivo .bas, se desarrolló el código necesario, solo falta la incorporación y compilación en VB6 para hacer una prueba."
