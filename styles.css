@@ -25,6 +25,8 @@
   --color-completed-bg: hsl(143, 85%, 96%);
   --color-pending: hsl(38, 92%, 50%); /* Amber / Warning */
   --color-pending-bg: hsl(48, 100%, 96%);
+  --color-suspended: hsl(0, 0%, 45%); /* Slate Gray */
+  --color-suspended-bg: hsl(0, 0%, 93%);
   
   /* Responsables (Colores pasteles tech) */
   --owner-dr: hsl(262, 83%, 58%); /* Tech Indigo */
@@ -347,6 +349,14 @@ header {
 }
 .status-pending::before {
   background: var(--color-pending);
+}
+
+.status-suspended {
+  background: var(--color-suspended-bg);
+  color: var(--color-suspended);
+}
+.status-suspended::before {
+  background: var(--color-suspended);
 }
 
 /* Info del Proyecto */

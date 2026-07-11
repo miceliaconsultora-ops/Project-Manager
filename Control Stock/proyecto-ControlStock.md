@@ -2,12 +2,12 @@
 id: control-stock
 name: Control Stock V2
 category: Mobile
-status: active
+status: suspended
 progress: 75
 description: Aplicación móvil para la preparación de entregas contra stock y control de despacho por cliente, integrada con Google Drive y Apps Script.
-next_step_action: Prueba efectiva, desarrollo de VB6, test stress y producción efectiva.
-next_step_responsible: Diego B.
-next_step_deadline: 2026-06-13
+next_step_action: Proyecto suspendido por falta de acuerdo con el cliente.
+next_step_responsible: N/A
+next_step_deadline: N/A
 ---
 
 # Proyecto - Control Stock V2
@@ -222,23 +222,14 @@ Esto genera un APK instalable para prueba mas cercana al uso real.
 ---
 
 ## Registro de Avance
+- 2026-07-11: Proyecto suspendido. No se llegó a un acuerdo comercial con el cliente.
+- 2026-06-03: APK terminada.
+- 2026-06-01: Se modificó la modalidad de entrega (posibilidad de envío one touch de la carga terminada por cliente) y se confeccionó el presupuesto y documento técnico para el cliente.
+- 2026-05-31: Se generó documento técnico para presentar al cliente. Debe presentarse, responsable. Atika
 - 2026-05-28: Surgió un inconveniente en el canal web. Se evalúa desarrollar una Flask-API o un ejecutable local para hidratar/recolectar datos de la app.
+- 2026-05-28 20.30hs.: Ya creamos el task plan. Se hará una integración con Google Drive Desktop a cargo de Diego R.
 - 2026-05-26: Flujo completo de entrega probado con Google Drive y Apps Script en entorno de preview web.
 - 2026-05-26: Estructuración de base de datos local SQLite y reglas anti-reutilización verificadas con manifest_version.
-- 2026-05-28 20.30hs.: Ya creamos el task plan. Se hará una integración con Google Drive Desktop a cargo de Diego R. 
-- 2026-05-31: Se generó documento técnico para presentar al cliente. Debe presentarse, responsable. Atika
-- 2026-06-01: Se modificó la modalidad de entrega (posibilidad de envío one touch de la carga terminada por cliente) y se confeccionó el presupuesto y documento técnico para el cliente.
 
-
-# [2026-06-01] - PROXIMOS PASOS. 
-
-- DESARROLLO DE LA APK.
-- TESTEO DE LA APK.
-- DESARROLLOS A CARGO DE DIEGO R. 
-- PLAZO 06-06-2026
-
-## 2026-06-03 ACTUALIZACION
-- APK TERMINADA. 
 ## PROXIMOS PASOS
-- PRUEBA EFECTIVA, DESARROLLO DE VB6, TEST STRESS Y PRODUCCIÓN EFECTIVA. A CARGO DE DIEGO B. 
-- PLAZO: 10 DIAS. 
+- N/A (Proyecto suspendido) 

@@ -2,11 +2,11 @@
 id: lampe
 name: Proyecto Lampe (Bot WhatsApp)
 category: IA & Bot
-status: active
+status: suspended
 progress: 20
 description: Sistema de atención y prefiltrado administrativo/triage por WhatsApp para clínica de fisioterapia utilizando la plataforma Runamatic.
-next_step_action: Esperar respuesta del cliente sobre el presupuesto entregado.
-next_step_responsible: Cliente
+next_step_action: Proyecto suspendido por falta de acuerdo con el cliente.
+next_step_responsible: N/A
 next_step_deadline: N/A
 ---
 
@@ -119,6 +119,7 @@ Despues de eso, el trabajo central sera reconstruir los flujos de recepcion y tu
 ---
 
 ## Registro de Avance
+- 2026-07-11: Proyecto suspendido. No se llegó a un acuerdo comercial con el cliente.
 - 2026-05-30: Presupuesto entregado. A la espera de la respuesta del cliente (plazo de 30 días para responder).
 - 2026-05-29: Presupuesto entregado: Próximos pasos, a la espera de la aprobación del cliente, para comennzar demo y MVP. 
 - 2026-05-28: Presupuesto finalizado. Se acordó la presentación al cliente el lunes 29/06.

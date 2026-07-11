@@ -6,15 +6,23 @@ window.projectsData = [
     "name": "Control Stock V2",
     "category": "Mobile",
     "description": "Aplicación móvil para la preparación de entregas contra stock y control de despacho por cliente, integrada con Google Drive y Apps Script.",
-    "status": "active",
+    "status": "suspended",
     "progress": 75,
     "isMicelia": false,
     "nextStep": {
-      "action": "Prueba efectiva, desarrollo de VB6, test stress y producción efectiva.",
-      "responsible": "Diego B.",
-      "deadline": "2026-06-13"
+      "action": "Proyecto suspendido por falta de acuerdo con el cliente.",
+      "responsible": "N/A",
+      "deadline": "N/A"
     },
     "history": [
+      {
+        "date": "2026-07-11",
+        "note": "Proyecto suspendido. No se llegó a un acuerdo comercial con el cliente."
+      },
+      {
+        "date": "2026-06-03",
+        "note": "APK terminada."
+      },
       {
         "date": "2026-06-01",
         "note": "Se modificó la modalidad de entrega (posibilidad de envío one touch de la carga terminada por cliente) y se confeccionó el presupuesto y documento técnico para el cliente."
@@ -46,15 +54,19 @@ window.projectsData = [
     "name": "Maestro de Productos Grunbau",
     "category": "Data",
     "description": "Pipeline de extracción de ítems de facturas de compra (digitales y escaneadas vía OCR Tesseract) para construir un maestro unificado de productos con precios de referencia.",
-    "status": "active",
-    "progress": 80,
+    "status": "completed",
+    "progress": 100,
     "isMicelia": false,
     "nextStep": {
-      "action": "Definir los criterios y rango de fechas para la extracción de recepciones a partir de facturas de compra.",
-      "responsible": "Atika",
-      "deadline": "2026-06-06"
+      "action": "Proyecto completado con éxito sin pendientes.",
+      "responsible": "N/A",
+      "deadline": "N/A"
     },
     "history": [
+      {
+        "date": "2026-07-11",
+        "note": "Proyecto finalizado. El maestro unificado y la extracción de recepciones se completaron con éxito."
+      },
       {
         "date": "2026-05-27",
         "note": "Inicio de fase de Recepciones: Atika debe definir criterios para la extracción y Diego R. desarrollará el pipeline."
@@ -74,15 +86,19 @@ window.projectsData = [
     "name": "Proyecto Lampe (Bot WhatsApp)",
     "category": "IA & Bot",
     "description": "Sistema de atención y prefiltrado administrativo/triage por WhatsApp para clínica de fisioterapia utilizando la plataforma Runamatic.",
-    "status": "active",
+    "status": "suspended",
     "progress": 20,
     "isMicelia": false,
     "nextStep": {
-      "action": "Esperar respuesta del cliente sobre el presupuesto entregado.",
-      "responsible": "Cliente",
+      "action": "Proyecto suspendido por falta de acuerdo con el cliente.",
+      "responsible": "N/A",
       "deadline": "N/A"
     },
     "history": [
+      {
+        "date": "2026-07-11",
+        "note": "Proyecto suspendido. No se llegó a un acuerdo comercial con el cliente."
+      },
       {
         "date": "2026-05-30",
         "note": "Presupuesto entregado. A la espera de la respuesta del cliente (plazo de 30 días para responder)."

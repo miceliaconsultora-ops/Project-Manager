@@ -172,6 +172,9 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (project.status === "pending-review") {
         statusClass = "status-pending";
         statusLabel = "En Revisión";
+      } else if (project.status === "suspended") {
+        statusClass = "status-suspended";
+        statusLabel = "Suspendido";
       }
       
       // Renderizar el historial
