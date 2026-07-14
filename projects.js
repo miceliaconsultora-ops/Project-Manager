@@ -144,6 +144,10 @@ window.projectsData = [
     },
     "history": [
       {
+        "date": "2026-07-14",
+        "note": "Se subió el PDF \"Para seguir aprendiendo\" a la sección de materiales del Segundo Encuentro en index.html."
+      },
+      {
         "date": "2026-07-11",
         "note": "Se agregaron nuevos materiales del Segundo Encuentro (Material de apoyo e Informe de geopolítica) y se sumó el Informe PyMEs Argentina 2026 al Primer Encuentro. Se reorganizaron los archivos físicos en subcarpetas (Encuentro 1 y Encuentro 2) y se actualizaron los enlaces en index.html, renombrando el acordeón a su título oficial \"Adopción Institucional: El rol del trabajador\"."
       },

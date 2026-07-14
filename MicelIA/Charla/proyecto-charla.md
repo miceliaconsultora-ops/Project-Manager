@@ -27,6 +27,7 @@ He sido contratado personalmente, para dar una suerte de curso o encuentros suce
 - Coordinar con el gremio los materiales y logística para los Encuentros 3 y 4.
 
 ## Registro de Avance
+- 2026-07-14: Se subió el PDF "Para seguir aprendiendo" a la sección de materiales del Segundo Encuentro en index.html.
 - 2026-07-11: Se agregaron nuevos materiales del Segundo Encuentro (Material de apoyo e Informe de geopolítica) y se sumó el Informe PyMEs Argentina 2026 al Primer Encuentro. Se reorganizaron los archivos físicos en subcarpetas (Encuentro 1 y Encuentro 2) y se actualizaron los enlaces en index.html, renombrando el acordeón a su título oficial "Adopción Institucional: El rol del trabajador".
 - 2026-07-02: Se anunció el Segundo Encuentro para el 14 de julio a las 17:30 hs con su temario detallado en el Hero (elemento colapsable interactivo). Se sumó popup modal de bienvenida para inscripción y se retiraron accesos directos de Zoom por seguridad.
 - 2026-06-30: Reorganización total de la sección de materiales en un acordeón interactivo por encuentros, subiendo el video del Primer Encuentro con carga diferida (lazy-load) y miniatura de YouTube, además de la presentación del mismo.
